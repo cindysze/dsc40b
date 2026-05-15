@@ -32,4 +32,4 @@ def knn_distance(arr, q, k):
             return quickselect(pivot_index + 1, right, k_smallest)
 
     result = quickselect(0, len(arr) - 1, k - 1)
-    return result
+    return result 
