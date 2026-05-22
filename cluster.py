@@ -2,7 +2,7 @@ def cluster(graph, weights, level):
     visited = set()
     clusters = []
 
-    for node in graph.nodes():
+    for node in graph.nodes:
         if node not in visited:
 
             component = set()
@@ -17,7 +17,6 @@ def cluster(graph, weights, level):
 
                     for neighbor in graph.neighbors(curr):
 
-                        # only keep strong enough edges
                         if weights(curr, neighbor) >= level:
                             if neighbor not in visited:
                                 stack.append(neighbor)
